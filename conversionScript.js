@@ -16,15 +16,15 @@ function binary() {
         alert("your code exceeds length,");
     }
     if(userI.length <=7){
-        alert("Prodeding will provide an inaccurate result.")
+        alert("Prodeding will provide an inaccurate result.");
     }
    for(i =7; i >=0; i-= 1){
     if (userI.charAt(i) === "1"){
         dResult += value[i];
    }
    }
-    document.write("<h2>Binary to Decimal Conversion</h2>")
-    document.write("Your binary code of "+ userI +". Evaluates to " + dResult);
+    document.write("<h2>Binary to Decimal Conversion</h2>");
+    document.write("Your binary code of "+ userI +". Evaluates to " + dResult + ".");
     document.write("<p>Please use your browser navigation, or click <a href='conversion.html'> here</a> to start over.</p>")
 }
 
