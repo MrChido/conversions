@@ -1,7 +1,11 @@
 /*8-bit binary string as locations 01234567
 /128/64/32/16/8/4/2/1*/
-binary.onclick = binary();
-d2b.onclick = d2b();
+
+document.getElementById("binary").addEventListener("click",
+  binary);
+document.getElementById("d2b").addEventListener("click",
+  d2b);
+
 
 function binary() {
    // document.getElementById('B2D');
@@ -47,7 +51,7 @@ function d2b() {
     }
      for(i =0; i<=values.length;i +=1){
     if (Dig >= values[i] ) {
-        digits[0] = "1";
+        digits[i] = "1";
         Dig -= values[i];
     }
      }
