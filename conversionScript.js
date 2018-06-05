@@ -23,8 +23,9 @@ function binary() {
         dResult += value[i];
    }
    }
-
+    document.write("<h2>Binary to Decimal Conversion</h2>")
     document.write("Your binary code of "+ userI +". Evaluates to " + dResult);
+    document.write("<p>Please use your browser navigation, or click <a href='conversion.html'> here</a> to start over.</p>")
 }
 
 
@@ -55,5 +56,7 @@ function d2b() {
         Dig -= values[i];
     }
      }
-document.write(Math.abs(userI) + " in binary is " + digits.join('') + "." );
+document.write("<h2>Decimal To Binary Conversion</h2>")
+document.write(Math.abs(userI) + " in binary is " + digits.join('') + ". " );
+document.write("<p>Please use your browser navigation to start over or click <a href='conversion.html'> here</a> to start over.</p>");
 }
