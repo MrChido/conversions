@@ -25,6 +25,7 @@ function binary() {
    }
     document.write("<h2>Binary to Decimal Conversion</h2>");
     document.write("Your binary code of "+ userI +". Evaluates to " + dResult + ".");
+    document.write("<p>For each '1' that you see in binary you add: 1,2,4,8,16,32,64,128; starting from right to left.</p>");
     document.write("<p>Please use your browser navigation, or click <a href='conversion.html'> here</a> to start over.</p>")
 }
 
@@ -56,8 +57,11 @@ function d2b() {
         Dig -= values[i];
     }
      }
+
+
 document.write("<h2>Decimal To Binary Conversion</h2>")
 document.write(Math.abs(userI) + " in binary is " + digits.join('') + ". " );
+document.write("<p>For each '1' that you see in binary you add: 1,2,4,8,16,32,64,128; starting from right to left.</p>");
 document.write("<p>Please use your browser navigation to start over or click <a href='conversion.html'> here</a> to start over.</p>");
 }
 /*a function for a future morse code converter
