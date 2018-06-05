@@ -60,3 +60,5 @@ document.write("<h2>Decimal To Binary Conversion</h2>")
 document.write(Math.abs(userI) + " in binary is " + digits.join('') + ". " );
 document.write("<p>Please use your browser navigation to start over or click <a href='conversion.html'> here</a> to start over.</p>");
 }
+/*a function for a future morse code converter
+function morse(){}*/
