@@ -13,7 +13,7 @@ function binary() {
     var dResult = 0;
     var userI = prompt("Please enter your Binary code, a set of 8 1s and 0s.");
     if(userI.length>=9){
-        alert("your code exceeds length,");
+        alert("your code exceeds requested length.");
     }
     if(userI.length <=7){
         alert("Prodeding will provide an inaccurate result.");
