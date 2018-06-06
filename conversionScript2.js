@@ -5,7 +5,7 @@ document.getElementById("binary").addEventListener("click",
   binary);
 document.getElementById("d2b").addEventListener("click",
   d2b);
-
+document.getElementById("morse").addEventListener("click",morse);
 
 function binary() {
    // document.getElementById('B2D');
@@ -64,5 +64,19 @@ document.write(Math.abs(userI) + " in binary is " + digits.join('') + ". " );
 document.write("<p>For each '1' that you see in binary you add: 1,2,4,8,16,32,64,128; starting from right to left.</p>");
 document.write("<p>Please use your browser navigation to start over or click <a href='conversion.html'> here</a> to start over.</p>");
 }
-/*a function for a future morse code converter
-function morse(){}*/
+/* a function for a future morse code converter
+1 in morse is . - - - -
+0 in morse is - - - - -
+separate digits with /  */
+function morse(){
+var bin= ['0'+'0'+'0'+'0'+'0'+'0'+'0'+'0'];
+var uD = prompt("please input a binary string(8 characters consisting of 1s and 0s)");
+for(d =0; d<8; d +=1){
+  if(uD.charAt(d)== "1"){
+    bin[d]=" .----";
+  }else{bin[d]=" -----"}
+
+}
+  console.log(uD);
+  document.write(bin);
+}
